@@ -1,0 +1,15 @@
+{
+  "name": "my-app-back",
+  "version": "1.0.0",
+  "description": "back del proyecto de la prueba técnica de dexon",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santiago Sáenz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "itertools": "^1.6.0"
+  }
+}
