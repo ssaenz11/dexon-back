@@ -1,6 +1,7 @@
 
 var express = require('express');
 var app = express();
+let convert = {}
 
 const f = (a, b) => [].concat(...a.map(d => b.map(e => [].concat(d, e))));
 const cartesiano = (a, b, ...c) => (b ? cartesiano(f(a, b), ...c) : a);
@@ -30,15 +31,20 @@ app.listen(3030, function () {
   console.log('Example app listening on port 3030!');
 });
 
-function getList(id){
-	let arreglo = [];
-	var letras = id+'';
-	var arrayLetras = letras.split('');
-	for (index = 0; index < arrayLetras.length; index++) { 
-		arreglo.push(t9[arrayLetras[index]-1].letras);
+convert.getL = function getList(id){
+	if(isNaN(id)|| id == ''){
+		return '';
+	}else{
+		let arreglo = [];
+		var letras = id+'';
+		var arrayLetras = letras.split('');
+		for (index = 0; index < arrayLetras.length; index++) { 
+			arreglo.push(t9[arrayLetras[index]-1].letras);
+		}
+		let output = cartesiano(...arreglo);
+		return output;
 	}
-	let output = cartesiano(...arreglo);
-	return output;
-
 }
+
+module.exports = convert;
 
