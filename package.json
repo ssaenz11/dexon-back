@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "back del proyecto de la prueba técnica de dexon",
   "main": "app.js",
+  "engines": {
+   "node": "10.15.1"
+   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +17,7 @@
     "mocha": "^7.1.2"
   },
   "scripts": {
+    "start": "node app.js",
     "test": "mocha"
   }
 }
