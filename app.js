@@ -22,12 +22,12 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/:id', function(req, res) {
+app.get('/api/:id', function(req, res) {
 
     res.send(convert.getL(req.params.id));
 });
 
-app.listen(process.env.PORT || 3030, function() {
+app.listen(process.env.PORT || 5000, function() {
         console.log("Servidor corriendo");
 });
 
