@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "itertools": "^1.6.0",
     "mocha": "^7.1.2",
-    "serve": "^11.3.0"
+    "serve": "^11.3.0",
+    "serve-favicon": "^2.5.0"
   }
 }
