@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 
 const f = (a, b) => [].concat(...a.map(d => b.map(e => [].concat(d, e))));
-const cartesian = (a, b, ...c) => (b ? cartesian(f(a, b), ...c) : a);
+const cartesiano = (a, b, ...c) => (b ? cartesiano(f(a, b), ...c) : a);
 const t9 = [{ 'letras':[''] },
 		{ 'letras':['a','b','c'] },
 		{ 'letras':['d','e','f'] },
@@ -37,7 +37,7 @@ function getList(id){
 	for (index = 0; index < arrayLetras.length; index++) { 
 		arreglo.push(t9[arrayLetras[index]-1].letras);
 	}
-	let output = cartesian(...arreglo);
+	let output = cartesiano(...arreglo);
 	return output;
 
 }
