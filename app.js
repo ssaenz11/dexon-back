@@ -27,8 +27,9 @@ app.get('/:id', function(req, res) {
     res.send(convert.getL(req.params.id));
 });
 
-app.listen(3030, function () {
-  console.log('Example app listening on port 3030!');
+app.listen(process.env.PORT || 3030, function() {
+        var port = server.address().port;
+        console.log("Express is working on port " + port);
 });
 
 convert.getL = function getList(id){
