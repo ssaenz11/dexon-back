@@ -28,8 +28,7 @@ app.get('/:id', function(req, res) {
 });
 
 app.listen(process.env.PORT || 3030, function() {
-        var port = server.address().port;
-        console.log("Express is working on port " + port);
+        console.log("Servidor corriendo");
 });
 
 convert.getL = function getList(id){
