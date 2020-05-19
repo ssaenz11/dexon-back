@@ -1,5 +1,49 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.table{
+  width: 450px;
+  margin-bottom: 10%; 
+  -webkit-overflow-scrolling: touch;
 }
+
+.imagen{
+  height: 200px;
+  width: 600px;
+  
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.telefono{
+  margin-top: 2%;
+}
+
+.my-custom-scrollbar {
+position: relative;
+height: 400px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+margin-bottom: 5%;
+}
+
+#ir{
+  margin-top:2%;
+  margin-bottom: 3%;
+  cursor:'pointer'
+}
+
+ button {
+  height: 50px;
+  width: 75px;
+  margin:  2px;
+}
+
+ button span {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+
+}
+
+
