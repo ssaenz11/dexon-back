@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "b6749e9b-eb3c-1893-bc1c-b5e2ac48e449",
+		"name": "PruebasDexon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://dexon-back.herokuapp.com/api/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "312a59b3-0f41-4acc-a2ee-96f0aea501f9",
+						"exec": [
+							"pm.test(\"Status test\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/1",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"1"
+					]
+				},
+				"description": "Get del teléfono"
+			},
+			"response": []
+		},
+		{
+			"name": "https://dexon-back.herokuapp.com/api/23764",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "24620202-10f9-4d8b-8f54-55bfb1be0fe4",
+						"exec": [
+							"pm.test(\"Status test\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/23764",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"23764"
+					]
+				},
+				"description": "Muchas números"
+			},
+			"response": []
+		},
+		{
+			"name": "https://dexon-back.herokuapp.com/api/4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f906b628-82b2-45f4-94fe-35bfe242c115",
+						"exec": [
+							"pm.test(\"Velocidad con un número\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/4",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"4"
+					]
+				},
+				"description": "Velocidad por debajo de 300ms"
+			},
+			"response": []
+		},
+		{
+			"name": "https://dexon-back.herokuapp.com/api/445",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "704f0921-0789-48a0-8340-9f49b7cf7712",
+						"exec": [
+							"pm.test(\"Velocidad con un número\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/445",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"445"
+					]
+				},
+				"description": "Velocidad por debajo de 300ms tres números"
+			},
+			"response": []
+		},
+		{
+			"name": "https://dexon-back.herokuapp.com/api/445456",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "db947f33-2673-42c7-ba07-93df89d30b2e",
+						"exec": [
+							"pm.test(\"Velocidad con un número\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/445456",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"445456"
+					]
+				},
+				"description": "Velocidad por debajo de 300 ms de 6 números"
+			},
+			"response": []
+		},
+		{
+			"name": "https://dexon-back.herokuapp.com/api/4454567",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "10014b57-dabb-4b79-8f4c-533b8be5a49a",
+						"exec": [
+							"pm.test(\"Velocidad con un número\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/4454567",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"4454567"
+					]
+				},
+				"description": "2000 ms para 7 números"
+			},
+			"response": []
+		},
+		{
+			"name": "https://dexon-back.herokuapp.com/api/ihb",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9e6b9061-fe0a-44cb-9e74-5502916dc784",
+						"exec": [
+							"pm.test(\"Debe estar vacío\", function () {",
+							"      pm.expect(pm.response.lenght).to.eql(undefined);",
+							"  });",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/ihb",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"ihb"
+					]
+				},
+				"description": "Debería ser vacío"
+			},
+			"response": []
+		},
+		{
+			"name": "https://dexon-back.herokuapp.com/api/*^¿?",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f4c7f89e-a9d6-42f6-8f9f-5f8ac8826c6c",
+						"exec": [
+							"pm.test(\"Debe estar vacío\", function () {",
+							"      pm.expect(pm.response.lenght).to.eql(undefined);",
+							"  });",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dexon-back.herokuapp.com/api/*^¿?",
+					"protocol": "https",
+					"host": [
+						"dexon-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"*^¿"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				},
+				"description": "Debería ser vacío"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

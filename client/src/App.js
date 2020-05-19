@@ -115,8 +115,8 @@
       </td>
     </tr>
     </table>
-        <button id = 'ir' className = 'btn btn-dark' onClick={this.cargarDatos}>ir</button>
-        <button id = 'ir' className = 'btn btn-danger' onClick={this.limpiar}>limpiar</button>
+        <button id = 'ir' className = 'btn btn-dark' onClick={this.cargarDatos}>Ir</button>
+        <button id = 'ir' className = 'btn btn-danger' onClick={this.limpiar}>Borrar</button>
       
     <div  className="table-wrapper-scroll-y my-custom-scrollbar table  col-lg-12 col-md-12 col-sm-12 col-12 col-centered ">
     <table className="table  table-bordered table-striped mb-0">

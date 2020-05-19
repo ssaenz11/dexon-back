@@ -13,34 +13,16 @@ app.use(function(req, res, next) {
   next();
 });
 
-// Put all API endpoints under '/api'
-app.get('/api/passwords', (req, res) => {
-  const count = 5;
-
-  // Generate some passwords
-  const passwords = Array.from(Array(count).keys()).map(i =>
-    generatePassword(12, false)
-  )
-
-  // Return them as json
-  res.json(passwords);
-
-  console.log(`Sent ${count} passwords`);
-});
-
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
-/*
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
-});
-*/
-
 const port = process.env.PORT || 5000;
 app.listen(port);
 
 console.log(`Password generator listening on ${port}`);
 
+
+app.get('/api/:id', function(req, res) {
+
+    res.send(convert.getL(req.params.id));
+});
 
 const f = (a, b) => [].concat(...a.map(d => b.map(e => [].concat(d, e))));
 const cartesiano = (a, b, ...c) => (b ? cartesiano(f(a, b), ...c) : a);
@@ -53,14 +35,6 @@ const t9 = [{ 'letras':[''] },
 		{ 'letras':['p','q','r','s'] },
 		{ 'letras':['t','u','v'] },
 		{ 'letras':['w','x','y','z']}];
-
-
-
-
-app.get('/api/:id', function(req, res) {
-
-    res.send(convert.getL(req.params.id));
-});
 
 convert.getL = function getList(id){
 	if(isNaN(id)|| id == ''){
